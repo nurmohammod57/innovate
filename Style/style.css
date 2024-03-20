@@ -1,0 +1,637 @@
+/* ------------------------------ Common CSS Start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+:root{
+    --orange-color: #FF5538;
+    --white-color: #ffffff;
+    --gray-color: #29313D;
+    --open-san: "Open Sans", sans-serif;
+    --nunito-san: "Nunito Sans", sans-serif;
+    --poppins: "Poppins", sans-serif;
+}
+.btn{
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 18px;
+    font-family: var(--nunito-san);
+}
+.paragraph{
+    font-family: var(--nunito-san);
+    font-size: 18px;
+}
+.section-title{
+    font-family: var(--poppins);
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 140%;
+    color: var(--gray-color);
+}
+.section-caption{
+    font-family: var(--poppins);
+    font-size: 20px;
+    line-height: 140%;
+    font-weight: 500;
+    color: var(--orange-color);
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+.display-flex{
+    display: flex;
+}
+/* ------------------------------ Common CSS End */
+
+/* ------------------------------ Nav Area Start */
+nav{
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+.nav-area{
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+.nav-area .nav-link{
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 22.5px;
+}
+.nav-area .nav-link li i{
+    margin-left: 3.5px;
+    vertical-align: middle;
+}
+.nav-area .nav-link li a{
+    font-family: var(--open-san);
+    font-weight: 600;
+    color: var(--gray-color);
+    transition: .4s;
+}
+.nav-area .nav-link li a:hover{
+    color: var(--orange-color);
+}
+.nav-area .btn{
+    background: var(--orange-color);
+    color: var(--white-color);
+    transition: .4s;
+    border: 1px solid transparent;
+} 
+.nav-area .btn:hover{
+    color: var(--orange-color);
+    background: var(--white-color);
+    border: 1px solid #FF5538;
+} 
+/* ------------------------------ Nav Area End */
+/* ------------------------------ Hero Area Start */
+#hero-section{
+    width: 100%;
+    background: url(../img/background.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+#hero-section .round-cercle{
+    width: 120px;
+    height: 120px;
+    border: 2px solid #FFABBA;
+    border-radius: 50%;
+    position: absolute;
+    top: 13%;
+    left: 41%;
+    animation: cercle 10s infinite linear;
+}
+#hero-section .round-cercle .round-tip{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #FFABBA;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#hero-section .ball-blinking{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #C087EE;
+    position: absolute;
+    top: 28%;
+    left: 60%;
+    animation: blinking 5s infinite linear;
+}
+#hero-section .cross-icon{
+    position: absolute;
+    color: #C087EE;
+    font-size: 25px;
+    top: 44%;
+    left: 80%;
+    animation: cross 10s infinite linear;
+}
+#hero-section .cross-icon1{
+    position: absolute;
+    color: #FFABBA;
+    font-size: 25px;
+    top: 15%;
+    left: 12%;
+    animation: cross1 10s infinite linear;
+}
+#hero-section .cross-icon2{
+    position: absolute;
+    color: #FFDCD8;
+    font-size: 25px;
+    bottom: 25%;
+    right: 32%;
+    animation: cross1 10s infinite linear;
+}
+@keyframes cercle{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes blinking{
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes cross{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes cross1{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes cross2{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+#hero-section .hero-area{
+    padding: 293px 0 297px;
+    flex-direction: column;
+    align-items: center;
+    background: url(../img/background.png);
+    background-position: top;
+    background-repeat: no-repeat;
+}
+#hero-section .hero-area h1{
+    font-family: var(--poppins);
+    font-size: 64px;
+    line-height: 130%;
+    color: var(--gray-color);
+    width: 771px;
+    text-align: center;
+}
+#hero-section .hero-area p{
+    font-family: var(--nunito-san);
+    line-height: 200%;
+    color: var(--gray-color);
+    width: 547px;
+    text-align: center;
+    margin: 24px 0 44px;
+}
+.hero-area .nav-btns :nth-child(1){
+    background: var(--orange-color);
+    color: var(--white-color);
+    margin-right: 24px;
+    transition: .4s;
+    border: 1px solid transparent;
+
+}
+.hero-area .nav-btns :nth-child(1):hover{
+    color: var(--orange-color);
+    background: var(--white-color);
+    border: 1px solid #FF5538;
+}
+.hero-area .nav-btns :nth-child(2){
+    background: var(--white-color);
+    color: var(--orange-color);
+    border: 1px solid #FF5538;
+    transition: .4s;
+}
+.hero-area .nav-btns :nth-child(2):hover{
+    background: var(--orange-color);
+    color: var(--white-color);
+    transition: .4s;
+}
+.hero-boxes{
+    margin-top: -153px;
+    position: relative;
+}
+.hero-box-area{
+    column-gap: 30px;
+    margin-bottom: 37px;
+}
+.hero-box-overlay{
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.hero-box-area .hero-box{
+    -webkit-box-shadow: 0px 44px 44px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 44px 44px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 44px 44px 0px rgba(0,0,0,0.2);
+    padding: 40px 30px;
+    background: var(--white-color);
+}
+.hero-box-area .hero-box h4{
+    font-family: var(--poppins);
+    font-size: 28px;
+    font-weight: 160%;
+    color: var(--gray-color);
+    margin: 34px 0 16px;
+}
+/* ------------------------------ Hero Area End */
+/* ------------------------------ Connect People Section Start */
+#connect-people-section .connect-people-area{
+    margin-top: 82px;
+}
+.connect-people-area .section-title{
+    width: 450px;
+    margin-bottom: 7px;
+}
+.content-area .content-box{
+    align-items: center;
+}
+.content-box .left-box{
+    width: 45%;
+    height: 500px;
+    z-index: 1;
+    margin-left: -50px;
+}
+.content-box .left-box img{
+    width: 100%;
+    display: block;
+    height: 100%;
+    position: relative;
+    right: -50px;
+}
+.content-box .right-box{
+    width: 58%;
+    padding: 125px 0 125px 90px;
+    background: url(../img/connect-right.png);
+    background-position: right;
+    background-size: cover;
+    height: 600px;
+}
+.right-box h3{
+    font-size: 36px;
+    line-height: 140%;
+    font-weight: 600;
+    font-family: var(--poppins);
+    color: var(--gray-color);
+    width: 570px;
+}
+.right-box .paragraph{
+    margin: 20px 0 48px;
+    width: 501px;
+}
+.right-box .btn{
+    background: var(--orange-color);
+    color: var(--white-color);
+    border: 1px solid transparent;
+    transition: .4s;
+}
+.right-box .btn:hover{
+    color: var(--orange-color);
+    background: var(--white-color);
+    border: 1px solid #FF5538;
+}
+/* ------------------------------ Connect People Section End */
+/* ------------------------------ Work Section Start */
+#work-section{
+    padding: 171px 0 120px;
+    position: relative;
+}
+.work-area .work-content-area{
+    align-items: center;
+    justify-content: space-between;
+}
+.work-area .work-content-area .section-title{
+    width: 693px;
+    margin-bottom: 60px;
+}
+.work-content-area .btn{
+    border: 1px solid #FF5538;
+    color: #FF5538;
+    transition: .4s;
+}
+.work-content-area .btn:hover{
+    border: 1px solid #FF5538;
+    background: #FF5538;
+    color: var(--white-color);
+}
+.work-area .work-boxes{
+    column-gap: 25px;
+    height: 500px;
+    margin-bottom: 30px;
+}
+.work-boxes .left-box{
+    overflow: hidden;
+    width: 40%;
+    height: 100%;
+    position: relative;
+}
+.work-boxes .left-box img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.work-boxes .right-box{
+    overflow: hidden;
+    width: 60%;
+    height: 100%;
+    position: relative;
+}
+.work-boxes .right-box img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.work-boxes .overlay{
+    padding: 30px;
+    background: var(--white-color);
+    height: 180px;
+    -webkit-box-shadow: inset 0px 0px 3px -1px rgba(0,0,0,.4);
+    -moz-box-shadow: inset 0px 0p 3px -1px rgba(0,0,0,.4);
+    box-shadow: inset 0px 0px 3px -1px rgba(0,0,0,.4);
+    transition: .4s;
+}
+.work-boxes .overlay h3 {
+    font-family: var(--poppins);
+    font-size: 28px;
+    font-weight: 140%;
+    color: var(--gray-color);
+    margin-bottom: 10px;
+}
+.work-boxes .overlay a {
+    font-family: var(--nunito-san);
+    font-size: 18px;
+    font-weight: 100%;
+    color: var(--orange-color);
+    font-weight: 500;
+}
+.left-box .overlay{
+    position: absolute;
+    left: 0;
+    bottom: -180px;
+    width: 100%;
+}
+.right-box .overlay{
+    position: absolute;
+    left: 0;
+    bottom: -180px;
+    width: 100%;
+}
+.left-box:hover .overlay{
+    bottom: 0;
+}
+.right-box:hover .overlay{
+    bottom: 0;
+}
+.work-box-bottom{
+    flex-direction: row-reverse;
+}
+ #work-section .work-left-background{
+    position: absolute;
+    top: -9%;
+    left: 0;
+ }
+/* ------------------------------  Work Section Section End */
+/*------------------------------- Count Section Start */
+#count-section{
+    background: url(../img/count-background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 120px 0;
+}
+#count-section .count-area{
+    column-gap: 100px;
+}
+.count-area .count-left{
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 45%;
+}
+.count-area .count-left .count-box{
+    background: var(--white-color);
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    flex-direction: column;
+    justify-content: center;
+}
+.count-left .count-box .section-title{
+    font-size: 40px;
+    line-height: 140%;
+    margin-bottom: 8px;
+}
+.count-right .section-title{
+    width: 570px;
+    margin-bottom: 20px;
+}
+.count-right .paragraph{
+    line-height: 200%;
+    width: 550px;
+    margin-bottom: 40px;
+}
+.count-right .btn{
+    background: var(--orange-color);
+    color: var(--white-color);
+    transition: .4s;
+    border: 1px solid transparent;
+}
+.count-right .btn:hover{
+    color: var(--orange-color);
+    background: var(--white-color);
+    border: 1px solid #FF5538;
+}
+/*------------------------------- Count Section End */
+/*------------------------------- Trust Section Start */
+#company-logo-section{
+    padding: 120px 0;
+}
+#company-logo-section .company-logo-area .section-title{
+    width: 849px;
+    margin-bottom: 60px;
+    text-align: center;
+    margin: 0 auto 60px;
+}
+.company-logo-area .all-logo{
+    column-gap: 30px;
+    flex-wrap: wrap;
+}
+.all-logo .logo-area{
+    padding: 25px 20px;
+    background: #FDF9F8;
+}
+/*------------------------------- Trust Section End */
+/*------------------------------- Customer Say Section Start */
+#customer-say-section{
+    padding: 120px;
+    background: url(../img/Our\ customer\ say.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#customer-say-section .customer-say-area{
+    align-items: center;
+    column-gap: 100px;
+}
+.customer-say-area .customer-say-left{
+    width: 50%;
+}
+#customer-say-section .customer-say-area .customers{
+    column-gap: 20px;
+    margin: 60px 0;
+}
+.customer-say-left .paragraph{
+    font-size: 20px;
+    line-height: 180%;
+    width: 590px;
+    margin-bottom: 61px;
+    color: rgba(41, 49, 61, .8);
+}
+.customer-say-left .arrow-key-box{
+    align-items: center;
+    column-gap: 40px;
+}
+.customer-say-left .arrow-key-box .section-title{
+    font-size: 36px;
+    line-height: 180%;
+    font-weight: 600;
+    font-family: var(--open-san);
+}
+.customer-say-left .arrow-key-box .arrow-key{
+    column-gap: 24px;
+}
+.customer-say-area .customer-say-right{
+    width: 50%;
+}
+.customer-say-area .customer-say-right img{
+    width: 100%;
+}
+/*------------------------------- Customer Say Section End */
+/*------------------------------- Got A Project Section Start */
+
+#got-project-section{
+    padding: 100px 0;
+    background: url(../img/Got\ a\ project_.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#got-project-section .got-project-area .top-part{
+    align-items: center;
+    justify-content: space-between;
+}
+.got-project-area .top-part .btn{
+    background: var(--orange-color);
+    color: var(--white-color);
+    border: 1px solid transparent;
+    transition: .4s;
+}
+.got-project-area .top-part .btn:hover{
+    color: var(--orange-color);
+    background: var(--white-color);
+    border: 1px solid #FF5538;
+}
+.got-project-area hr{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 47px 0 24px;
+    padding: 0;
+    
+}
+.got-project-area .paragraph{
+    font-size: 20px;
+    line-height: 180%;
+    font-weight: 400;
+    margin-right: 100px;
+}
+/*------------------------------- Got A Project Section End */
+/*------------------------------- Footer Section Start */
+#footer-section{
+    padding: 140px 0 57px;
+}
+#footer-section .footer-top{
+    column-gap: 140px;
+}
+
+.footer-top .footer-left{
+    width: 40%;
+}
+.footer-area .footer-top .footer-left img{
+    margin-bottom: 44px;
+}
+.footer-area .footer-left .paragraph{
+    line-height: 180%;
+    width: 456px;
+}
+.footer-top .footer-right{
+    width: 60%;
+}
+.footer-right .footer-row{
+    column-gap: 56px;
+}
+.footer-row .footer-col h5{
+    font-size: 24px;
+    line-height: 140%;
+    font-family: var(--open-san);
+    font-weight: 600;
+    color: #29313D;
+    margin-bottom: 48px;
+}
+.footer-row .footer-col a{
+    font-size: 20px;
+    display: block;
+    line-height: 120%;
+    font-family: var(--nunito-san);
+    font-weight: 600;
+    color: #29313D;
+    margin-bottom: 30px;
+}
+.footer-area .footer-bottom {
+    justify-content: space-between;
+    margin: 80px 0 57px;
+}
+.footer-area .footer-bottom .paragraph{
+    line-height: 180%;
+    color: rgba(41, 49, 61, .9);
+}
+.footer-bottom .footer-condition{
+    column-gap: 40px;
+}
+/*------------------------------- Footer Sectio End */
